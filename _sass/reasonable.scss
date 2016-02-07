@@ -1,0 +1,61 @@
+//
+// Styling CSS without losing your sanity
+// http://rscss.io
+
+// Generic Rules ///////////////////////////////////////////////////////////////
+// - avoid tag selectors, use classnames whenever possible.
+// - avoid positioning properties in components, instead define positioning in
+//   parent components (e.g., `.profile-list > .profile-box`):
+//     - positioning (position, top, left, right, bottom)
+//     - floats (float, clear)
+//     - margins (margin)
+//     - dimensions (width, height) [exception to these would be elements that
+//         have fixed width/heights, such as avatars and logos]
+//  - one component per file (e.g., `css/components/profile-box.scss`)
+
+// Components //////////////////////////////////////////////////////////////////
+// - at least two words, separated by a dash.
+
+.profile-box {}
+
+// Elements ////////////////////////////////////////////////////////////////////
+// - prefer to use the > child selector whenever possible.
+// - only one word, concatenate two or more words without dashes or underscores.
+
+.profile-box {
+  // elements
+  > .firstname {}
+  > .lastname {}
+  > .avatar {}
+}
+
+// Variants (components & elements) ////////////////////////////////////////////
+// - prefixed by a dash.
+
+.profile-box {
+  // variants
+  &.-wide {}
+  &.-short {}
+  &.-disabled {}
+}
+
+.profile-box {
+  // elements
+  > .avatar {}
+
+  // variants
+  > .avatar.-small {}
+}
+
+// Nested components ///////////////////////////////////////////////////////////
+// - when nested in another component, avoid modifying the nested component by
+//   reaching into it from the containing component; instead, prefer to add a
+//   variant to the nested component and apply it from the containing component.
+
+.profile-box {
+  > .social-profiles > .facebook { /* avoid this */ }
+}
+
+.social-profiles {
+  &.-nested > .facebook {}
+}
