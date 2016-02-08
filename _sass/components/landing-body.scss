@@ -1,0 +1,35 @@
+.landing-body {
+  @include display(flex);
+  @include flex-flow(column);
+  @include align-items(center);
+
+  .title {
+    width: 750px;
+
+    font-size: $base-font-size * 2.4;
+    font-weight: 700;
+  }
+
+  > .text {
+    width: 750px;
+
+    font-size: $base-font-size * 1.2;
+  }
+  > .text.-bigger {
+    width: 650px;
+
+    font-size: $base-font-size * 1.4;
+  }
+}
+
+.benefit-list {
+  @extend %default-ol;
+
+  width: 650px;
+}
+
+.benefit-item {
+  > .text {
+    font-size: $base-font-size * 1.2;
+  }
+}

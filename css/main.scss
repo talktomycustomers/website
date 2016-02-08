@@ -6,17 +6,17 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "debug",
+@import "debug"
 
-        "vendor/normalize", // No other styles should come before Normalize.css
-        "vendor/pesticide",
-        "vendor/bourbon/bourbon",
-        "base/grid-settings",
-        "vendor/neat/neat",
-        "base/base", // All additional stylesheets should be imported below Bitters
+      , "vendor/normalize" // No other styles should come before Normalize.css
+      , "vendor/pesticide"
+      , "vendor/bourbon/bourbon"
+      , "base/grid-settings"
+      , "vendor/neat/neat"
+      , "base/base" // All additional stylesheets should be imported below Bitters
 
-        "grid-layout",
-        "sticky-footer",
-        "components/components"
+      , "global"
+      , "grid-layout"
+      , "sticky-footer"
+      , "components/components"
 ;

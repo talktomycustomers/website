@@ -7,6 +7,8 @@ $dark-green-color: rgb(40,175,97);
   @include flex-flow(column);
   @include align-items(center);
 
+  margin-bottom: $base-spacing * 4;
+
   > .slogan {
     font-size: $base-font-size * 4;
     font-weight: 800;
