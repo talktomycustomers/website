@@ -1,0 +1,29 @@
+$light-skyblue-color: rgb(52,153,220);
+$dark-skyblue-color: rgb(40,128,186);
+
+.lead-form {
+  margin-top: $base-spacing;
+
+  > label {
+    font-size: $base-font-size * 1.2;
+    font-weight: 500;
+  }
+
+  > .submit {
+    width: 100%;
+
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    @include padding(null 1em);
+
+    color: $light-white-color;
+    font-family: $heading-font-family;
+    font-size: $base-font-size * 1.6;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    background-color: $light-skyblue-color;
+    border-bottom: 3px solid $dark-skyblue-color;
+    border-radius: $base-border-radius * 2;
+  }
+}
