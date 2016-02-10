@@ -1,0 +1,11 @@
+.feature-box {
+  width: 750px;
+
+  &:not(:last-child) {
+    margin-bottom: $base-spacing;
+  }
+
+  > .text {
+    font-size: $base-font-size * 1.2;
+  }
+}

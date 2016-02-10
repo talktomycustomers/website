@@ -1,0 +1,9 @@
+.benefit-list {
+  @extend %default-ol;
+
+  width: 650px;
+
+  > .benefit {
+    font-size: $base-font-size * 1.2;
+  }
+}

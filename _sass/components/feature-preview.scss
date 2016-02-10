@@ -1,0 +1,19 @@
+.feature-preview {
+  @include display(flex);
+  @include flex-flow(column);
+  @include align-items(center);
+
+  @include margin(0);
+  margin-bottom: $small-spacing;
+
+  > img {
+    display: block;
+  }
+
+  > figcaption {
+    font-size: $base-font-size * 1.8;
+    font-weight: 700;
+
+    text-align: center;
+  }
+}

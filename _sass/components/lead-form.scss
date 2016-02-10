@@ -3,6 +3,10 @@ $dark-skyblue-color: rgb(40,128,186);
 
 .lead-form {
   margin-top: $base-spacing;
+  width: 500px;
+  @include padding($small-spacing);
+  background-color: $light-white-color;
+  border-radius: $base-border-radius * 2;
 
   > label {
     font-size: $base-font-size * 1.2;
