@@ -4,7 +4,7 @@ $dark-skyblue-color: rgb(40,128,186);
 .lead-form {
   margin-top: $base-spacing;
   width: 500px;
-  @include padding($small-spacing);
+  @include padding($base-spacing $small-spacing);
   background-color: $light-white-color;
   border-radius: $base-border-radius * 2;
 
@@ -25,6 +25,7 @@ $dark-skyblue-color: rgb(40,128,186);
     font-size: $base-font-size * 1.6;
     font-weight: 700;
     letter-spacing: 1px;
+    text-decoration: none;
 
     background-color: $light-skyblue-color;
     border-bottom: 3px solid $dark-skyblue-color;

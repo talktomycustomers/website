@@ -1,4 +1,31 @@
 .site-header {
-  visibility: hidden;
-  background-color: lightgray;
+  @include display(flex);
+  @include align-items(center);
+
+  @include padding($base-spacing);
+  margin-bottom: $base-spacing * 4;
+
+  > img {
+    width: 80px;
+  }
+
+  > a {
+    margin-left: $small-spacing;
+    margin-top: $base-spacing;
+
+    text-decoration: none;
+    color: $base-font-color;
+
+    * {
+      @include margin(0);
+
+      font-family: $heading-font-family;
+      font-size: $base-font-size * 2;
+      font-weight: 800;
+    }
+  }
+
+  > nav {
+    @include flex(1);
+  }
 }
