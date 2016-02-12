@@ -7,17 +7,18 @@ $dark-green-color: rgb(40,175,97);
   @include flex-flow(column);
   @include align-items(center);
 
-  margin-bottom: $base-spacing * 4;
+  margin-bottom: $base-spacing * 6;
 
   > .slogan {
+    margin-bottom: 0.25em;
+
     font-size: $base-font-size * 4;
     font-weight: 800;
     text-align: center;
   }
 
   > .hero {
-    display: block;
-
+    width: 60%;
     margin-bottom: $base-spacing;
   }
 

@@ -5,3 +5,11 @@ hr {
 a {
   text-decoration: underline;
 }
+
+img {
+  overflow: hidden;
+}
+
+figcaption {
+  @extend h1;
+}
