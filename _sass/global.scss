@@ -1,4 +1,15 @@
-.site-title {
-  font-weight: 700;
-  font-size: 38px;
+hr {
+  @include margin($base-spacing * 3 null);
+}
+
+a {
+  text-decoration: underline;
+}
+
+img {
+  overflow: hidden;
+}
+
+figcaption {
+  @extend h1;
 }

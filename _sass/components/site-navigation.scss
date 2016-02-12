@@ -1,0 +1,37 @@
+$light-white-color: rgb(237,241,241);
+$light-skyblue-color: rgb(52,153,220);
+$dark-skyblue-color: rgb(40,128,186);
+
+.site-navigation {
+  @include display(flex);
+  @include justify-content(flex-end);
+  @include align-items(baseline);
+
+  > * {
+    margin-right: $base-spacing;
+  }
+  > .signin {
+    @include order(1);
+  }
+  > .reserveseat {
+    @include order(2);
+    margin-right: 0;
+
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    @include padding(null 1em);
+
+    * {
+      color: $light-white-color;
+      font-family: $heading-font-family;
+      font-size: $base-font-size * 1.2;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    background-color: $light-skyblue-color;
+    border-bottom: 3px solid $dark-skyblue-color;
+    border-radius: $base-border-radius * 2;
+  }
+}

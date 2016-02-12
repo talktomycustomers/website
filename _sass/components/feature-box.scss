@@ -1,0 +1,8 @@
+.feature-box {
+  margin-top: $base-spacing * 3;
+  width: 750px;
+
+  > .text {
+    font-size: $base-font-size * 1.2;
+  }
+}

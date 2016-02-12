@@ -1,0 +1,41 @@
+$light-white-color: rgb(237,241,241);
+$light-green-color: rgb(47,204,113);
+$dark-green-color: rgb(40,175,97);
+
+.callout-box {
+  @include display(flex);
+  @include flex-flow(column);
+  @include align-items(center);
+
+  margin-bottom: $base-spacing * 6;
+
+  > .slogan {
+    margin-bottom: 0.25em;
+
+    font-size: $base-font-size * 4;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  > .hero {
+    width: 60%;
+    margin-bottom: $base-spacing;
+  }
+
+  > .button {
+    padding-top: 0.2em;
+    padding-bottom: 0.3em;
+    @include padding(null 1em);
+
+    color: $light-white-color;
+    font-family: $heading-font-family;
+    font-size: $base-font-size * 2;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    background-color: $light-green-color;
+    border-bottom: 3px solid $dark-green-color;
+    border-radius: $base-border-radius * 2;
+  }
+}
